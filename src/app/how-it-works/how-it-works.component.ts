@@ -11,7 +11,7 @@ export class HowItWorksComponent implements OnInit {
   }
 
   cards1 = [
-    {url: "/assets/cloud-syn-logo/cloud-syn-logo.png" ,
+    {url: "assets/cloud-syn-logo/cloud-syn-logo.png" ,
      title: "All in the cloud. Real time sync for both managers and workers"},
     {url: "assets/anounce-shifts-logo/anounce-shift-logo.png" ,
      title: "Anounce all your events and open shifts on the system"},
