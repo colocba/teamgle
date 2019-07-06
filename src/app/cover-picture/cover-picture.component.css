@@ -1,0 +1,29 @@
+.centered-down {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cover-pic img {
+    width: 100%;
+  }
+
+  .cover-pic h1 {
+    font-size: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+  }
+
+  .cover-pic {
+    position: relative;
+    text-align: center;
+  }
+
+  @media (max-width : 400px) {
+    .centered-down { 
+      top: 70% !important;
+      font-size: 15px !important;
+      left: 50%;
+    }
+  }

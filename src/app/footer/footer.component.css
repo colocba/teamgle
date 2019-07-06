@@ -1,0 +1,44 @@
+.teamgle-logo {
+    background: url("../../assets/logo/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    background-position: center;
+  }
+
+.footer-cont {
+    margin: 30px;
+}
+.icons {
+    margin-top: 20px;
+}
+
+.icons i {
+margin-left: 10px;
+}
+
+a {
+    cursor: pointer;
+}
+
+.vcenter {
+    display: flex;
+    align-items: center;
+}
+
+.centerBlock {
+    text-align: center;
+  }
+
+@media (max-width : 400px) {
+    .footer-cont {
+        margin: unset;
+        margin-right: 20px !important;
+        margin-bottom: 20px !important;
+    }
+    .teamgle-logo {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}

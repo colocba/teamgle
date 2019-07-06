@@ -1,0 +1,23 @@
+#navbar {
+  width: 100%;
+  top:0;
+  box-shadow: 2px 2px black;
+}
+
+.navbar a {
+  color: black;
+  font-size: 20px;
+}
+
+.cov-img {
+  background: url("../../assets/logo-title/logo-title.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 130px;
+  width: 200px;
+  background-position: center;
+}
+
+@media (max-width : 400px) {
+  .fixed-top { position:sticky; }
+}

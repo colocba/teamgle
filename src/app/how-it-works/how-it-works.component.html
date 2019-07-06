@@ -1,0 +1,40 @@
+<div class="container" id="hiw-div">
+
+    <div data-aos="zoom-in"
+        data-aos-duration="2000"
+        data-aos-once="true"
+        data-aos-delay="50">
+        <div class="container">
+                <h1 class="title">How it works?</h1>
+            </div>
+    </div>
+    
+    <div class="container logos">
+        <div class="row justify-content-center">
+            <div *ngFor="let card of cards1;" class="col-lg-3 col-sm-6">
+                <div data-aos="fade-up"
+                    data-aos-duration="2000"
+                    data-aos-once="true"
+                    data-aos-delay="50">
+                    <div class="container logo-card">
+                        <img src={{card.url}}/>
+                        <p>{{card.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div *ngFor="let card of cards2;" class="col-lg-3 col-sm-6">
+                <div data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-once="true"
+                    data-aos-delay="200">
+                    <div class="container logo-card">
+                        <img src={{card.url}}/>
+                        <p>{{card.title}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
