@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
-import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
@@ -16,11 +15,10 @@ import { PricingComponent } from './pricing/pricing.component';
 import { HomeComponent } from './home/home.component';
 import { PricingTableComponent } from './pricing-table/pricing-table.component';
 
-const appRoutes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch:'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'pricing', component: PricingComponent}
-];
+// const appRoutes: Routes = [
+//   {path: '', component: HomeComponent},
+//   {path: 'pricing', component: PricingComponent}
+// ];
 
 @NgModule({
   declarations: [
@@ -38,8 +36,7 @@ const appRoutes: Routes = [
   ],
   imports: [
     BrowserModule,
-    NgxPageScrollModule,
-    RouterModule.forRoot(appRoutes)
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]
