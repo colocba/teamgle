@@ -1,0 +1,20 @@
+<div class="table-responsive-s table-responsive-l">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th  *ngFor="let field of tableContent;" 
+                scope="col"><span class="table-titles">${{field.price}}</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let field of tableContent; let i=index;">
+            <th scope="row">{{recordTitles[i]}}</th>
+            <td style="text-align: center">{{field.paymentPeriod}}</td>
+            <td style="text-align: center">{{field.commitmentPeriod}}</td>
+            <td style="text-align: center">{{field.users}}</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
