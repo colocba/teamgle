@@ -17,7 +17,7 @@ import { HomeComponent } from './home/home.component';
 import { PricingTableComponent } from './pricing-table/pricing-table.component';
 
 const appRoutes: Routes = [
-  {path: '', component: HomeComponent},
+  {path: '.', component: HomeComponent},
   {path: 'pricing', component: PricingComponent}
 ];
 
