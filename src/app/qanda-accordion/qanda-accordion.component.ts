@@ -23,6 +23,10 @@ export class QandaAccordionComponent implements OnInit {
     question: "Is there any support?",
     answer: "Of course! Teamgle team is available for your on whatsapp, email and phone. We'll be more than happy to help you.",
     hrefId: "collapseFour"
+  }, {
+    question: "How do I start using Teamgle?",
+    answer: "When getting your system permission you will be able to start creating your organization background by setting work positions, workers and clients data, users permissions. Now go ahead and set for each of your employees user name and password and they will be able to receive relevant information on real time of all events and conferences running on the system. Also from the cellphone. ",
+    hrefId: "collapseFive"
   }]
 
   constructor() { }
