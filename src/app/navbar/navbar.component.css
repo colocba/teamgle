@@ -20,7 +20,9 @@
 }
 
 @media (max-width : 400px) {
-  .fixed-top { position:sticky; position: -webkit-sticky;}
+  .fixed-top { position: -webkit-sticky;
+                position:sticky;
+              }
   .cov-img {height: 80px;}
 }
 
