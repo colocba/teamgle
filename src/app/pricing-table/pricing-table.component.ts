@@ -21,16 +21,17 @@ export class PricingTableComponent implements OnInit {
       price: 1300,
       paymentPeriod: "Monthly",
       commitmentPeriod: "1 Year",
-      users: 50
+      users: 100
     },
     {
       price: 1800,
       paymentPeriod: "Monthly",
       commitmentPeriod: "1 Year",
-      users: 50
+      users: "Unlimited"
     }
   ];
 
+  console = console
   ngOnInit() {
   }
 

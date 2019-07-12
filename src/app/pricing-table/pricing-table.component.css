@@ -1,5 +1,22 @@
 .table-titles {
     color: green;
-    font-size: 110px;
+    font-size: 60px;
     font-family: 'Economica', sans-serif;
+}
+
+.table-text-align {
+    text-align: center;
+}
+
+table.table tbody tr td,
+table.table thead tr th{
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+}
+
+.no-top-border {
+    border-top: none !important;
+}
+.no-left-border {
+    border-left: none !important;
 }

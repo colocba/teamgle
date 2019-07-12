@@ -14,11 +14,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { HomeComponent } from './home/home.component';
 import { PricingTableComponent } from './pricing-table/pricing-table.component';
-
-// const appRoutes: Routes = [
-//   {path: '', component: HomeComponent},
-//   {path: 'pricing', component: PricingComponent}
-// ];
+import { AppRoutingModule } from './app-routing.module';
+import { QandaComponent } from './qanda/qanda.component';
+import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.component';
 
 @NgModule({
   declarations: [
@@ -32,11 +30,14 @@ import { PricingTableComponent } from './pricing-table/pricing-table.component';
     FooterComponent,
     PricingComponent,
     HomeComponent,
-    PricingTableComponent
+    PricingTableComponent,
+    QandaComponent,
+    QandaAccordionComponent
   ],
   imports: [
     BrowserModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,19 +1,22 @@
-<div class="table-responsive-s table-responsive-l">
+<div class="table table-responsive-sm" style="padding: 30px;">
     <table class="table">
+        <caption class="caption">$35 for each extra user / month. Prices are excluding taxes</caption>
         <thead>
           <tr>
-            <th scope="col"></th>
-            <th  *ngFor="let field of tableContent;" 
-                scope="col"><span class="table-titles">${{field.price}}</span>
+            <th class="no-top-border no-left-border" scope="col"></th>
+            <th class="table-text-align no-top-border" *ngFor="let field of tableContent;" 
+                scope="col"><span class="table-titles">₪{{field.price}}</span>
             </th>
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let field of tableContent; let i=index;">
-            <th scope="row">{{recordTitles[i]}}</th>
-            <td style="text-align: center">{{field.paymentPeriod}}</td>
-            <td style="text-align: center">{{field.commitmentPeriod}}</td>
-            <td style="text-align: center">{{field.users}}</td>
+          <tr *ngFor="let title of recordTitles; let i=index;">
+            <th scope="row">{{title}}</th>
+            <td *ngFor="let record of tableContent" class="table-text-align">
+                <ng-template [ngIf]="i == 0">{{record.paymentPeriod}}</ng-template>
+                <ng-template [ngIf]="i == 1">{{record.commitmentPeriod}}</ng-template>
+                <ng-template [ngIf]="i == 2">{{record.users}}</ng-template>
+            </td>
           </tr>
         </tbody>
       </table>

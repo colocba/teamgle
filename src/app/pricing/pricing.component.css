@@ -1,18 +1,6 @@
-.under-nav {
-    text-align: center;
-    margin-top: 130px;
-}
 
-@media (max-width : 450px) {
-    .under-nav {
-        text-align: center;
-        margin-top: 180px;
-    }
-  }
 
-  @media (max-width : 400px) {
-    .under-nav {
-        text-align: center;
-        margin-top: none;
-    }
+  .marg-top-bottom-30 {
+      margin-top: 50px;
+      margin-bottom: 50px;
   }

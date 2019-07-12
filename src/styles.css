@@ -39,3 +39,14 @@
     font-style: italic;
     color: white;
 }
+
+@media (max-width : 450px) {
+    .under-nav-title {
+        margin-top: 0px !important;
+    }
+  }
+
+  .under-nav-title {
+    text-align: center;
+    margin-top: 180px;
+}
