@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 import { AppComponent } from './app.component';
 import { from } from 'rxjs';
@@ -17,6 +16,8 @@ import { PricingTableComponent } from './pricing-table/pricing-table.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QandaComponent } from './qanda/qanda.component';
 import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.component';
+
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
 @NgModule({
   declarations: [
@@ -36,8 +37,8 @@ import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.compo
   ],
   imports: [
     BrowserModule,
-    NgxPageScrollModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ScrollToModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
