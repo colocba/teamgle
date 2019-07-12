@@ -1,5 +1,6 @@
 #navbar {
   width: 100%;
+  -webkit-top:0;
   top:0;
   box-shadow: 2px 2px black;
 }
