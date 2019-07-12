@@ -5,10 +5,11 @@ import { HomeComponent } from './home/home.component';
 import { QandaComponent } from './qanda/qanda.component';
 
 const routes: Routes = [
+  { path: "", redirectTo: '/home', pathMatch: 'full'},
   { path: 'home', component: HomeComponent},
   { path: 'pricing', component: PricingComponent },
   { path: 'qanda', component: QandaComponent },
-  { path: '**', component: HomeComponent}
+  { path: '**', redirectTo: '/home', pathMatch: 'full'}
 ];
 
 @NgModule({
