@@ -18,6 +18,7 @@ import { QandaComponent } from './qanda/qanda.component';
 import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.component';
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
     HomeComponent,
     PricingTableComponent,
     QandaComponent,
-    QandaAccordionComponent
+    QandaAccordionComponent,
+    AboutUsComponent
   ],
   imports: [
     BrowserModule,

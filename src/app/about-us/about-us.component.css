@@ -1,0 +1,29 @@
+.about-img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.black-font {
+    font-weight: bold;
+}
+
+.about-us-text p {
+    text-align: center;
+}
+
+.about-us-text {
+    padding: 40px;
+}
+
+.text-column {
+    vertical-align: center;
+}
+
+i {
+    margin-right: 10px;
+}
+
+#hear-more-text {
+    margin-bottom: 0px !important;
+}
