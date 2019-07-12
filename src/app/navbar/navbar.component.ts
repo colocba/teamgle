@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,26 +8,27 @@ import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scrol
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
-  private config: ScrollToConfigOptions;
-
-  /* Each time any a is pressed need to set dynamically offset deppending
+  /* Each time any a is pressed need to set dynamically the offset deppending
       on screen size */
   private desktopOffset = -140;
   private phonePortraitOffset = -400;
   private phoneLandscapeOffset = -150;
 
-  constructor(private _scrollToService: ScrollToService) {
+  constructor(private _scrollToService: ScrollToService, private router: Router) {
+      router.events.subscribe((params) => {
+        // see also 
+        console.log(params);
+    });
   }
   
   public triggerScrollTo(divId) {
     const currentOffset = this.setOffsetByScreenSize();
-    this.config = {
+    const config: ScrollToConfigOptions = {
       target: divId,
       duration: 650,
       offset: currentOffset
     };
-    this._scrollToService.scrollTo(this.config);
+    this._scrollToService.scrollTo(config);
   }
 
   public setOffsetByScreenSize() {
