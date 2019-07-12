@@ -19,7 +19,7 @@
   background-position: center;
 }
 
-@media (max-width : 400px) {
+@media screen and (orientation:portrait) {
   .fixed-top { position:sticky; }
   .cov-img {height: 80px;}
 }
