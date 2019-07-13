@@ -20,6 +20,8 @@ import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.compo
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AboutUsComponent } from './about-us/about-us.component';
 
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,7 +44,7 @@ import { AboutUsComponent } from './about-us/about-us.component';
     AppRoutingModule,
     ScrollToModule.forRoot()
   ],
-  providers: [],
+  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
 })
 export class AppModule {
