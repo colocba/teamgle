@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ScrollToService, ScrollToConfigOptions } from '@nicky-lenaers/ngx-scroll-to';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common'
+import { timer } from 'rxjs';
 
 @Component({
   selector: 'app-navbar',
@@ -15,13 +17,14 @@ export class NavbarComponent implements OnInit {
   private phoneLandscapeOffset = -150;
 
   constructor(private _scrollToService: ScrollToService, private router: Router) {
-      router.events.subscribe((params) => {
-        // see also 
-        console.log(params);
-    });
+
   }
   
   public triggerScrollTo(divId) {
+    // if (!this.router.url.includes('home')) {
+    //   this.router.navigate(['/home']);
+    //   return;
+    // }
     const currentOffset = this.setOffsetByScreenSize();
     const config: ScrollToConfigOptions = {
       target: divId,
