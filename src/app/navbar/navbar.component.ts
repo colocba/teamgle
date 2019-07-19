@@ -13,7 +13,7 @@ export class NavbarComponent implements OnInit {
   /* Each time any a is pressed need to set dynamically the offset deppending
       on screen size */
   private desktopOffset = -140;
-  private phonePortraitOffset = -400;
+  private phonePortraitOffset = -150;
   private phoneLandscapeOffset = -150;
 
   constructor(private _scrollToService: ScrollToService, private router: Router) {
