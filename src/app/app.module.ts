@@ -16,6 +16,7 @@ import { PricingTableComponent } from './pricing-table/pricing-table.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QandaComponent } from './qanda/qanda.component';
 import { QandaAccordionComponent } from './qanda-accordion/qanda-accordion.component';
+import { NgxPageScrollModule } from 'ngx-page-scroll'
 
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { AboutUsComponent } from './about-us/about-us.component';
@@ -42,7 +43,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    NgxPageScrollModule
   ],
   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   bootstrap: [AppComponent]
