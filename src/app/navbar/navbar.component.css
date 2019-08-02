@@ -7,16 +7,45 @@
   height: 90px !important;
 }
 
-.navbar a {
+.navbar .nav-item a {
   color: black;
   font-size: 18px;
   cursor: pointer;
-  transition: text-shadow 0.5s;
+  position: relative;
+  color: #000;
+  text-decoration: none;
 }
 
-.navbar a:hover {
-  text-shadow: 1px 0px 2px #000000;
+.navbar .nav-item a:hover {
+  color: #000;
 }
+
+/* for underline effects - only for desktop */
+
+@media (min-width: 800px) {
+  .navbar .nav-item a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .navbar .nav-item a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+
+/* ////////////////////////////// */
 
 .bg-blue {
   background-color: transparent !important;
